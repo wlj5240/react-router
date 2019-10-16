@@ -21,7 +21,8 @@ yarn build --output-path "$tmp_dir/static/react-router" --output-public-path $PU
 cd $tmp_dir
 git add -A
 git commit \
-	--author "Travis CI <travis-ci@reacttraining.com>" \
+  --allow-empty \
+  --author "Travis CI <travis-ci@reacttraining.com>" \
   -m "Update react-router website
 
 https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID"
